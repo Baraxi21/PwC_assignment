@@ -1,7 +1,7 @@
 from langchain.llms import OpenAI
 
 def generate_quiz_question_with_options(topic, api_key):
-    llm = OpenAI(api_key='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')
+    llm = OpenAI(api_key='api_key')
 
     prompt = f"Create a multiple choice quiz question about {topic}, along with 4 options (A, B, C, D) and indicate the correct answer."
     response = llm(prompt, max_tokens=150, temperature=0.7).strip()

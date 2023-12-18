@@ -11,7 +11,7 @@ def reset_quiz_state():
 if 'quiz_data' not in st.session_state:
     reset_quiz_state()
 
-api_key = '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' 
+api_key = 'api_key' 
  
 topic = st.text_input("Enter a topic for your quiz:", key="new_topic")
 num_questions = st.number_input("How many questions do you want?", min_value=1, max_value=10, value=10, key="num_questions")
